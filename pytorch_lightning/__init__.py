@@ -39,6 +39,7 @@ Documentation
 """
 
 _logger = python_logging.getLogger("lightning")
+_logger.propagate = False
 _logger.addHandler(python_logging.StreamHandler())
 _logger.setLevel(python_logging.INFO)
 
